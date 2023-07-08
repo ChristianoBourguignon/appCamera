@@ -1,7 +1,7 @@
+import React, {useEffect, useState, useRef} from 'react';
+import{ FontAwesome } from '@expo/vector-icons';
 import { Camera, CameraType } from 'expo-camera';
-import React, { useState, useEffect, useRef } from 'react';
-import{ FontAwesome } from '@expo/vector-icons'
-import { StyleSheet, Text, View, SafeAreaView, TouchableOpacity, Modal, Image } from 'react-native';
+import { View, SafeAreaView, StyleSheet, TouchableOpacity, Modal, Image } from 'react-native';
 
 export default function App() {
   const [type, setType] = useState(CameraType.front);
@@ -69,6 +69,7 @@ export default function App() {
     </SafeAreaView>
   );
 }
+
 
 const styles = StyleSheet.create({
   container: {
